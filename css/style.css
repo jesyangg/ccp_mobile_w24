@@ -196,7 +196,7 @@ height:100vh;
 grid-template-areas: 
 "subject1info subject1info subject1pic subject1pic"
 "subject1photogal subject1photogal subject1photogal subject1details";
-margin-top: 200px;
+margin-top: 300px;
 }
 
 .recipegrid2 {
@@ -216,6 +216,25 @@ grid-template-areas:
 margin-top: 800px;
 }
 
+.recipegrid3 {
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr ;
+column-gap: 30px;
+margin: 0 auto;
+height:100vh;
+grid-template-areas: 
+"subject1info subject1info subject1pic subject1pic"
+"subject1photogal subject1photogal subject1photogal subject1details";
+}
+
+#poop {
+  margin-top: 2200px;
+}
 
 
 .grid1 div {
@@ -322,7 +341,7 @@ img {
     "subject1photogal"
     "subject1details";
   }
-    .recipegrid {
+    .recipegrid, .recipegrid2, .recipegrid3 {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
       grid-template-areas:
@@ -334,18 +353,6 @@ img {
       "recipepics";
 
   }
-  .recipegrid2 {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "subject1info"
-    "subject1pic"
-    "recipestory"
-    "recipeingredients"
-    "recipesteps"
-    "recipepics";
-
-}
 }
 
   .navigation.responsive {position:relative;}
